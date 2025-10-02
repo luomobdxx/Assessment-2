@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - CharityEvents</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">CharityEvents</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search Events</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="container">
+        <!-- 加载状态 -->
+        <div id="loading" class="loading">
+            <p>Loading event details...</p>
+        </div>
+
+        <!-- 活动详情内容 -->
+        <div id="event-details" style="display: none;">
+            <!-- 内容将通过JavaScript动态加载 -->
+        </div>
+
+        <!-- 行动按钮区域 -->
+        <section class="action-section">
+            <div class="action-buttons">
+                <button id="register-btn" class="btn-register">Register for This Event</button>
+                <a href="search.html" class="btn-secondary">Back to Search</a>
+                <a href="index.html" class="btn-secondary">Back to Home</a>
+            </div>
+        </section>
+
+        <!-- 类似活动推荐 -->
+        <section id="similar-events" class="similar-events" style="display: none;">
+            <h2>You Might Also Like</h2>
+            <div id="similar-events-container" class="events-grid">
+                <!-- 类似活动将通过JavaScript加载 -->
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I register for an event?</h3>
+                    <p>Click the "Register" button above and follow the instructions. You'll receive a confirmation email with event details.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What happens after I register?</h3>
+                    <p>You'll receive a confirmation with event details, and the organizer may contact you with additional information.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I cancel my registration?</h3>
+                    <p>Please contact the event organizer directly for cancellation requests and refund policies.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are the events accessible?</h3>
+                    <p>Accessibility varies by event. Please check with the organizer for specific accessibility information.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CharityEvents</h3>
+                    <p>Creating meaningful connections for charitable causes</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Access</h4>
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="search.html">Event Search</a></li>
+                        <li><a href="#contact">Get in Touch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>For Organizers</h4>
+                    <p>Interested in listing your event?</p>
+                    <p>Email: organizers@charityevents.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CharityEvents. Building better communities together.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/event-details.js"></script>
+</body>
+</html>

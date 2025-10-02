@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Charity Events - CharityEvents</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">CharityEvents</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html" class="active">Search Events</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="container">
+        <header class="page-header">
+            <h1>Find Your Perfect Charity Event</h1>
+            <p>Search through our database of upcoming charity events by location, date, or category</p>
+        </header>
+
+        <!-- 搜索表单 -->
+        <section class="search-section">
+            <form id="search-form" class="search-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="location">📍 Location</label>
+                        <input type="text" id="location" name="location" placeholder="e.g., Sydney, Melbourne, Adelaide">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">📅 Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="category">🏷️ Event Type</label>
+                        <select id="category" name="category">
+                            <option value="">All Categories</option>
+                            <option value="dinner">Gala Dinner</option>
+                            <option value="run">Fun Run/Walk</option>
+                            <option value="auction">Auction</option>
+                            <option value="concert">Concert</option>
+                            <option value="workshop">Workshop</option>
+                            <option value="sports">Sports Event</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Search Events</button>
+                    <button type="button" id="clear-btn" class="btn-secondary">Clear Filters</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- 搜索结果 -->
+        <section class="results-section">
+            <h2>Search Results</h2>
+            <div id="search-results" class="search-results">
+                <div class="search-placeholder">
+                    <p>Enter your search criteria above to find charity events</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 搜索提示 -->
+        <section class="search-tips">
+            <h3>💡 Search Tips</h3>
+            <div class="tips-grid">
+                <div class="tip">
+                    <h4>Location Search</h4>
+                    <p>Search by city, region, or specific venue name to find events near you</p>
+                </div>
+                <div class="tip">
+                    <h4>Date Flexibility</h4>
+                    <p>Leave the date field empty to see all upcoming events</p>
+                </div>
+                <div class="tip">
+                    <h4>Multiple Criteria</h4>
+                    <p>Combine location, date, and category for precise results</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CharityEvents</h3>
+                    <p>Making charity accessible to everyone</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="search.html">Search Events</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <p>Need help finding an event?</p>
+                    <p>Contact: support@charityevents.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CharityEvents. Connecting communities through charity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/search.js"></script>
+</body>
+</html>
